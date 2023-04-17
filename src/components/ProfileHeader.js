@@ -8,8 +8,8 @@ function ProfileHeader(props) {
         <div className="banner-area">
           <div className="banner-image"></div>
           <div className="name-icon-area">
-            <ProfileIcon />
-            <div>{props.name}</div>
+            <ProfileIcon color="salmon"/>
+            <div className="profile-header-name">{props.name}</div>
           </div>
 
           <div className="profile-stats-area">

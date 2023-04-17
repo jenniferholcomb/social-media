@@ -7,7 +7,7 @@ function FeedListItem(props) {
   return (
     <React.Fragment>
       <div className="FeedListItem">
-        <ProfileIcon />
+        <ProfileIcon backgroundColor={props.backgroundColor}/>
         <div className="tweet-contents">
           <div className="tweet-name">{props.name}</div>
           <div className="tweet-body">{props.body}</div>
