@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ddd;
+  background-color: #efefef;
   color: #222;
   margin: 1rem;
 }
@@ -39,6 +39,10 @@ button.round-blue {
   margin-left: 1rem;
 }
 
+main {
+  padding-top: 5rem;
+}
+
 .Header {
   position: absolute;
   margin: 0;
@@ -52,4 +56,57 @@ button.round-blue {
   padding: 0 1rem;
   justify-content: space-between;
   border-bottom: 0.2rem solid rgb(184, 184, 184);
+}
+
+.Feed {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid rgb(184, 184, 184);
+}
+
+.FeedListItem {
+  border-bottom: 0.1rem solid rgb(184, 184, 184);
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.FeedListItem > .tweet-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-name {
+  font-weight: bold;
+}
+
+.ProfileIcon {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  background-color: #ab942188;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-header {
+ display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(124, 187, 208);
+}
+
+.feed-input {
+  height: 3rem;
+  padding-left: 1rem;
+  flex-grow: 0.9;
+  outline: 0.1rem solid rgb(0, 195, 255);
+  border-radius: 2px;
+}
+
+.feed-input::placeholder {
+  color: rgb(0, 195, 255);
 }
